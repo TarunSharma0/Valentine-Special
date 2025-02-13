@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love for You</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Great Vibes', cursive;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 4em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 1.8em;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            font-size: 1.5em;
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: white;
+            color: #ff758c;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #ff477e;
+            color: white;
+            transform: scale(1.1);
+        }
+        .heart {
+            font-size: 5em;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <script>
+        function askAgain() {
+            document.getElementById('question').innerText = "Hawwww really? Think again baby!";
+        }
+        function loopQuestion() {
+            document.getElementById('question').innerText = "No no no, I know you love me! Just say YES!";
+        }
+        function nextStep() {
+            document.getElementById('container').innerHTML = `<p>Jaanu, are you ready for your Surprise Cutie? 💖</p>
+            <div class="buttons">
+                <button class="btn" onclick="showParagraph()">Yes</button>
+            </div>`;
+        }
+        function showParagraph() {
+            document.getElementById('container').innerHTML = `<p>You don't deserve a paragraph. You deserve a thousand books written about how amazing you are. You're beautiful and when you smile, it's the prettiest thing I've ever seen. You deserve the world. You are so beautiful and talented and just a work of art. Your heart is so big and you always want to help everyone as much as you can. You have such an affectionate smile that puts me in a good mood. You deserve to be adored and cared for in every way that your mind, body, and heart need and long for. You deserve to be appreciated in every way you give your love and energy to someone else. You deserve to be taken on extravagant dates, not to feel guilty asking for what you want, to be unapologetically you. To put your foot down and say no more when someone is only willing to give you the bare minimum. You deserve to keep your standards high, because that means you will not allow yourself to settle. I love everything about you, starting from your beautiful eyes which are more beautiful than any sunrise or sunset, and I love your smile. It makes me want to make you smile every chance I get. ❤️😭</p>
+            <div class="buttons">
+                <button class="btn" onclick="showDefinition()">If you read it, let's move on to the next part baby 💖</button>
+            </div>`;
+        }
+        function showDefinition() {
+            document.getElementById('container').innerHTML = `<h2>My Definition of "I Love You" 💕</h2>
+            <p>"I love you" means that I accept you for who you are, all your insecurities; what you see as imperfections and I see simply as parts of you that make you yourself. It means that I won’t try to change you into someone different, it means that I will always care for you and be there for you no matter what comes in between us. It means I’ll stand by you and love you through the worst of times. That means loving you in a bad mood, when you’re down, it means loving you and supporting you when you’re too tired to do the things I want to do. It means me putting you before myself or anyone else. It means loving you all of the time.</p>
+            <p>"I love you" means you can tell me anything if you ever want to and I’ll always listen and never judge you. All I ask in return is your love meri jaan just be real with me be the happy you with I just can't tell you how happy i became after seeing you smiling and I just can't explain how much it affects me to see you sad. Yess we fight a lot but it means that I care enough to fight for you and hold you and never let go. It means I’m always thinking of you, dreaming of you, wishing I could be with you when I’m not and hold your the tightest when I'm with you.</p>
+            <p>"I love you" to me, is the connection between our hearts, beauty, personalities, and soul. It means we are together in each other’s paths or I can say now it's our path and our Journey and we have to complete it together. Yess I'm little bit of Hawasi daninda too but It doesn't mean that I’m with you only for "sex" , or a physical way. I’m in "this" [relationship] for all of you, everything you do and feel. It means there’s a deeper connection that anyone else wouldn’t be able to comprehend. It means always needing you or wanting you, knowing that you feel the same way towards me and trusting you to feel similarly. There is more to "I love you" than I can describe in words other than the words I’m describing, "I love you".</p>
+            <p>~ Aapki Jaan, Aapka khasam ~</p>
+            <div class="buttons">
+                <button class="btn" onclick="finalMessage()">One last surprise, baby 💖</button>
+            </div>`;
+        }
+        function finalMessage() {
+            document.getElementById('container').innerHTML = `<h2>My Love for You is Forever ❤️</h2>
+            <p>From the moment I met you, my life changed in ways I never imagined. Every day with you is a blessing, and I can't wait to spend every moment cherishing and loving you. I know this was nothing as compared to the things you do for me and the love and care you do for me, you deserve much more than this and I promise I'll always try to make you the happiest(hugg hi hugg). Thank you for being my heart, my soul, my everything. 💖</p>
+            <h1>I LOVE YOU! 💕</h1>`;
+        }
+    </script>
+</head>
+<body>
+    <h1>My Love for You ❤️</h1>
+    <div id="container" class="container">
+        <p id="question">Will you be my Valentine? 💖</p>
+        <div class="buttons">
+            <button class="btn" onclick="nextStep()">Yes</button>
+            <button class="btn" onclick="askAgain()">No</button>
+        </div>
+    </div>
+</body>
+</html>
